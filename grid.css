@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+}
+
+main{
+    background-color: #1A1C28;
+    padding: 50px;
+    width: 50%;
+    margin:auto;  
+    display:grid; 
+    grid-template-areas: 'a a b'
+                         'c d d'
+                         'c e e';
+    gap: 10px;
+}
+
+main > div{
+    padding: 50px;
+}
+
+.firstdiv{
+    background-color: #EB5020;
+    grid-area: a;
+    padding: 100px;
+}
+
+.seconddiv{
+    background-color: #FFA401;
+    grid-area: b;
+}
+
+.thirddiv{
+    background-color: #05AA42;
+    grid-area: c;
+}
+
+.fourthdiv{
+    background-color: #01AEFD;
+    grid-area: d;
+}
+
+.fifthdiv{
+    background-color: #01AEFD;
+    grid-area: e;
+}
+
+a{
+    color: white; 
+    float: left;
+    cursor: pointer;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    
+}
