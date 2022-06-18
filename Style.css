@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+
+}
+
+main{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    width: 50%;
+    max-height: 45%;
+    margin:auto;  
+}
+
+.flex_items {
+    display:flex;  
+
+}
+
+
+.sedan{
+    border: 1px solid brightorange;
+    background-color: hsl(31, 77%, 52%);
+    padding: 35px;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.sedan>button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suv{
+    border: 1px solid darkcyan;
+    background-color: hsl(184, 100%, 22%);
+    padding: 39px;
+}
+
+.suv>button{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    border: 1px solid verydarkcyan;
+    background-color: hsl(179, 100%, 13%);
+    padding: 35px;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.luxury>button{
+    color: hsl(179, 100%, 13%);
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 5px 0px 30px;
+
+}
+
+h4{
+    color: hsl(0, 0%, 95%);
+    padding: 20px 0px;
+    font-family: 'Big Shoulders Display';
+    font-size: 25px;
+}
+
+button{
+  background-color: hsl(0, 0%, 95%);
+  border: hsl(0, 0%, 95%);
+  text-align: center;  
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+button:active{
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+a{
+    color: black; 
+    float: right;
+
+}
+
+/* Responsiveness for mobile screen */
+@media screen and (max-width: 375px) {
+    .flex_items{
+        flex-direction: column;
+    }
+
+    button{
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;  
+    }
+
+    .sedan{
+       border-radius: 7px 7px 0px 0px;;
+    }
+
+    .luxury{
+        border-radius: 0px 0px 7px 7px;
+    }
+
+    body{
+        font-size: 13px;
+    }
+
+    h4{
+        font-size: 23px;
+    }
+
+    img{
+        width: 60%;
+    }
+}
+
+/* Responsiveness for Desktop devices */
+@media screen and (max-width:1440px) {
+    main{
+        padding: 150px;
+    }
+
+    a{
+        margin-top: 20px;
+        text-align: right;
+        font-weight: 700;
+        font-size: larger;
+        cursor: pointer;
+    }
+}
